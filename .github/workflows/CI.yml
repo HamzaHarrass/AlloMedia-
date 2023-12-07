@@ -37,6 +37,9 @@ jobs:
       runs-on: windows-latest
   
       steps:
+        - name: Checkout repository
+          uses: actions/checkout@v2
+        
         - name: Run server tests
           working-directory: Server
           run: |
