@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import api from '../../api';
-import  Navbar  from '../../views/common/Navbar';
 
 
 const Command = () => {
@@ -22,6 +21,7 @@ const Command = () => {
   }, []); 
 
   return (
+    
   <div className='p-20 '>
     <h2 className=' mb-4 text-lg font-bold'>Your Commands</h2>
     {commands && commands.length && (
